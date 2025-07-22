@@ -1,0 +1,45 @@
+/* Importation des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script:wght@400..700&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script&display=swap'); */
+
+/* Importation de Tailwind CSS */
+@import 'tailwindcss';
+
+/* Importation du plugin d'animation */
+@plugin 'tailwindcss-animate';
+
+:root {
+    --global-bg: rgba(7, 119, 24, 0.601);
+}
+
+/* Application de la police 'Bitcount' au body */
+body {
+    /* font-family: 'Bitcount Prop Single', sans-serif; */
+    /* font-family: "Alfa Slab One", serif; */
+    font-weight: 400;
+    font-style: normal;
+    /* word-break: break-all; */
+    background: var(--global-bg);
+}
+
+h2, h3,h4, h5 ,p {
+    font-family: 'Bitcount Prop Single', sans-serif;
+}
+
+
+.bg-primary {
+    @apply bg-orange-400;
+}
+
+.text-primary {
+    @apply text-orange-400;
+}
+
+.bg-secondary {
+    @apply bg-green-800;
+}
+
+.btn-primary {
+    @apply bg-green-800 text-white font-bold py-2 px-4 rounded-sm cursor-pointer;
+}

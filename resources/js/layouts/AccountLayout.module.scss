@@ -1,0 +1,9 @@
+.account {
+    display: flex;
+    background: greenyellow;
+
+    &-aside {
+        width: 20%;
+        background: rgba(188, 186, 186, 0.507);
+    }
+}
